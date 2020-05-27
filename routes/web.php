@@ -18,3 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/post','PostController@index');
+
+Route::get('/control', function(){
+    return view('post');
+});
