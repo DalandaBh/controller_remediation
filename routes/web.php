@@ -22,3 +22,9 @@ Route::get('/post','PostController@index');
 Route::get('/control', function(){
     return view('post');
 });
+
+Route::get('/variable', function(){
+    // $nom ="Linda";
+
+    return view('post',['nom'=>'Linda']);
+});
