@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/post','PostController@index');
+Route::get('/index','PostController@index');
 
 Route::get('/control', function(){
     return view('post');
@@ -28,3 +28,6 @@ Route::get('/variable', function(){
 
     return view('post',['nom'=>'Linda']);
 });
+
+Route::get('/show','PostController@show');
+Route::get('/edit','PostController@edit');
